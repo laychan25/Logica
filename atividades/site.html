@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+
+<h1>Bem vindo amigo !</h1>
+
+<html>
+    <head>
+        <title> Algumas perguntas </title>
+        <meta name="ola">
+    </head>
+
+    <body bgcolor= "#800080">
+    </body>
+    
+</html>
+
+<script>
+    let nome = prompt('Qual o seu nome?');
+    let idade = prompt('Qual sua idade?');
+    let progamacao = prompt('Qual linguagem de progamacao esta estudando ?')
+    let pergunta = prompt(`Voce gosta de estudar ${progamacao}? se sim digite 1 se nao digite 2`)
+
+    document.write(`${nome}!, vc tem ${idade}anos? e ja esta estudando ${progamacao} uau <br>`)
+   
+
+    if(pergunta == 1){
+        document.write(` Ahh que legal, e sempre bom aprender coisas novas <br>`)
+}
+    if(pergunta == 2){
+        document.write(' Poxa... as vezes e meio desafiador mas se realmente nao gosta estude outra coisa <br> ')
+    }
+
+
+</script>
