@@ -1,0 +1,46 @@
+
+<button> apaga tudo</button>
+<canvas width = "600" height="400">
+
+
+<script>
+
+var tela = document.querySelector("canvas")
+var pincel = tela.getContext("2d")
+
+pincel.fillStyle = "lightgrey"
+pincel.fillRect(0,0,600,400)
+
+
+function desenhaCirculo(evento){
+
+  var x = evento.pageX -tela.offsetLeft
+  var y = evento.pageY- tela.offsetTop
+
+
+  pincel.fillStyle="pink"
+  pincel.beginPath();
+  pincel.arc(x, y, 10, 0, 2*3.14);
+  pincel.fill();
+
+}
+
+tela.onclick = desenhaCirculo;
+
+function apagaDesenho(){
+
+pincel.fillStyle = "lightgrey"
+pincel.fillRect(0,0,600,400)
+
+
+}
+ 
+
+var botao = querySelector("button")
+
+botao.onclick = apagaDesenho 
+
+
+
+</script>
+</canvas>
